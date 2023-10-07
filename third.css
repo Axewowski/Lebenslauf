@@ -1,0 +1,16 @@
+.main {
+    width: 610px;
+    height: 610px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+}
+
+.mole {
+    background-color: aqua;
+}

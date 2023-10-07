@@ -1,0 +1,298 @@
+:root {
+    --bkg: green;
+    --bkg2: yellow;
+    --bkg3: red;
+    --bkg4: orange;
+    --bkg5: blue;
+    --bkg6: purple;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#List0 {
+    background: linear-gradient(var(--bkg), var(--bkg2));
+    position: absolute;
+    height: 360px;
+    width: 600px;
+    
+    border: 10px solid green;
+    display: flex;
+    justify-content: center;
+    left: 28%;
+    right: 28%;
+}
+
+#List1 {
+
+    background: linear-gradient(var(--bkg3), var(--bkg4));
+    position: absolute;
+    height: 360px;
+    width: 600px;
+    
+    border: 10px solid green;
+    display: flex;
+    justify-content: center;
+    left: 28%;
+    right: 28%;
+    display: none;
+
+}
+
+
+.List3 {
+
+    background: linear-gradient(var(--bkg5), var(--bkg6));
+    position: absolute;
+    height: 360px;
+    width: 600px;
+    
+    border: 10px solid green;
+    display: flex;
+    justify-content: center;
+    left: 28%;
+    right: 28%;
+    display: none;
+}
+
+.naruto {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.sasuke { 
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.sakura {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.Gaara {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.Kankuro { 
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.Temari {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.SunaCharacter {
+    position: absolute;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+
+}
+
+
+.Team {
+    position: absolute;
+    left: 43%;
+    right: 28%;
+}
+
+.TeamS {
+    position: absolute;
+    left: 37%;
+    right: 28%;
+}
+
+.KonohaImages {
+
+    position: absolute;
+    
+
+}
+
+.SoundCharacter {
+    position: absolute;
+
+}
+
+
+
+.Zaku {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+
+.Dosu {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+
+.Kin {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.TeamO {
+    position: absolute;
+    left: 37%;
+    right: 28%;
+}
+
+.Character-info {
+    position: absolute;
+    display: none;
+    background: plum;
+    border: 1px solid, blue;
+    bottom: 20px;
+    left: 24%;
+    width: 50%;
+    height: 35%;
+
+}
+
+.Bunshin {
+    position: absolute;
+    right: 5%;
+}
+
+.SexyJutsu {
+    position: absolute;
+    right: 30%;
+}
+
+.Hengeno {
+    position: absolute;
+    right: 55%;
+}
+
+.sharingan {
+    position: absolute;
+    right: 5%;
+   
+}
+
+.Shishi {
+    position: absolute;
+    right: 30%;
+}
+
+.GōkakyūnoJutsu {
+    position: absolute;
+    right: 55%;
+   
+}
+
+.num {
+    position: absolute;
+    left: 47%;
+    bottom: 69%;
+}
+
+.A {
+    margin-right: 2%; /* Dodaje odstęp 10 pikseli po prawej stronie */
+  }
+  
+  .W {
+    margin-right: 2%; /* Dodaje odstęp 10 pikseli po prawej stronie */
+    margin-left: 2%; /* Dodaje odstęp 10 pikseli po lewej stronie */
+  }
+  
+  .D {
+    margin-left: 2%; /* Dodaje odstęp 10 pikseli po lewej stronie */
+  }
+
+.met1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 25%;
+    left: 28%;
+    height: 40px;
+    
+}
+
+.met2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 25%;
+    right: 30%;
+    height: 40px;
+    
+}
+
+.met3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 25%;
+    right: 5%;
+    height: 40px;
+    
+}
+
+.READY {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    left: 2%;
+    bottom: 25%;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.prepare {
+    background: linear-gradient(var(--bkg), var(--bkg2));
+    position: absolute;
+    height: 80%;
+    width: 39%;
+    bottom: 10%;
+
+    border: 10px solid green;
+    display: flex;
+    justify-content: center;
+    left: 28%;
+    display: none;
+}
+
+.accept {
+    position: absolute;
+    height: 20%;
+    width: 30%;
+    left: 5%;
+    font-size: 3.5vh;
+}
+
+.decline {
+    position: absolute;
+    height: 20%;
+    width: 30%;
+    right: 5%;
+    font-size: 3.5vh;
+}

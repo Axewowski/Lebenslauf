@@ -1,0 +1,765 @@
+/*
+
+Bussy CLASS
+
+menu
+me
+portfolio
+gry
+contact
+
+*/
+
+/*
+
+Bussy ID
+
+hi
+YO 
+Media 
+Partitions 
+games 
+talk
+
+*/
+
+:root {
+    --yellowbg1: #ff8080;
+    --yellowbg2: #ffe6e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background: linear-gradient(var(--yellowbg1), var(--yellowbg2));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.me, .portfolio, .fm, .contact {
+    font-size: 20px;
+    background:transparent;
+    height: 70px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+
+.me {
+    position: relative;
+}
+
+.me::after {
+    content: "";
+    position: absolute;
+    top: 75px; 
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.me:hover::after {
+    width: 100%;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.portfolio:hover::after {
+    width: 100%;
+}
+
+.fm {
+    position: relative;
+}
+
+.fm::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.fm:hover::after {
+    width: 100%;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.contact:hover::after {
+    width: 100%;
+}
+
+.infof {
+    position: absolute;
+    text-align: center;
+    bottom: 60%;
+}
+
+ #YO, #Media, #Partitions, #games, #talk {
+    position: relative;
+    top: 90px;
+}
+
+.infof a {
+    text-decoration: none;
+    position: relative;
+}
+
+.infof a::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;    
+}
+
+
+.infof a:hover::after {
+    width: 100%;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#palmbgk {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 20%;
+}
+
+#sun {
+    position: absolute;
+    height: 100px;
+    animation-delay: 5s;
+    animation: move 10s ease-in-out infinite;
+}
+
+.offer {
+    position: absolute;
+    border: #ff8080 5px solid;
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    bottom: 10%;
+    overflow: hidden;
+    box-shadow: 0 0 200px purple;
+}
+
+.offer h1 {
+    position: absolute;
+    margin: 20px 0px 20px 23%;
+}
+
+.oferta {
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    right: 45%;
+    font-size: 25px;
+    bottom: 30%;
+    background: transparent;
+}
+
+.oferta::after {
+    content: ' ';
+    width: 15%;
+    height: 10%;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 10px;
+    bottom: 95%;
+    animation-delay: 1s;
+    animation: offer 4s ease-in-out infinite;
+}
+
+.oferta:hover {
+    border: 5px solid;
+    border-color: green;
+}
+
+.bgk {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+}
+
+.Kampanie {
+    border-radius: 1%;
+    
+    border: #ff8080 5px solid;
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    bottom: -90%;
+    text-align: center;
+    left: 15%;
+}
+
+.Kampanie li {
+    text-align: left;
+    font-size: 23px;
+    margin: 2%;
+}
+
+.Kampanie button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+
+#why::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 12%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#why:hover::after {
+    width: 20%;
+}
+
+#services::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 21%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#services:hover::after {
+    width: 27%;
+}
+
+#cost::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 29%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#cost:hover::after {
+    width: 15%;
+}
+
+#stack::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 37%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#stack:hover::after {
+    width: 28%;
+}
+
+#WordPress::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 46%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#WordPress:hover::after {
+    width: 47%;
+}
+
+#Time::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 54%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#Time:hover::after {
+    width: 38%;
+}
+
+#Me::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 62%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#Me:hover::after {
+    width: 39%;
+}
+
+#kontakt::after {
+    position: absolute;
+    content: ' ';
+    background-color: #ff8080;
+    height: 1%;
+    width: 0%;
+    height: 0.5%;    
+    top: 70%;
+    left: 4.9%;
+    transition: .3s ease-in-out;
+}
+
+#kontakt:hover::after {
+    width: 83%;
+}
+
+#whyImage {
+    position: absolute;
+    display: none;
+    border: 5px solid green;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+    
+}
+
+#bgk {
+    position: absolute;
+    border: 1px solid yellow;
+    background: yellow;
+    height: 100%;
+    width: 100%;
+    right: 0%;
+    opacity: 0.8;
+}
+
+#Ax {
+    position: absolute;
+    display: none;
+    padding: 50px 50px 50px 130px;
+    z-index: 1;
+}
+
+#AxInfo {
+    position: absolute;
+    display: none;
+    font-size: 20px;
+    bottom: 35%;
+    z-index: 1;
+    padding: 0px 150px 0px 130px ;    
+}
+
+#AxInfoo {
+    position: absolute;
+    display: none;
+    font-size: 20px;
+    bottom: 20%;
+    z-index: 1;
+    padding: 0px 150px 0px 130px ;    
+    
+}
+
+#ext {
+    position: absolute;
+    display: none;
+    font-size: 20px;
+    bottom: 85%;
+    z-index: 1;
+    right: 14%;
+    background: #ff8080;
+}
+
+#serv {
+    position: absolute;
+    display: none;
+    border: 5px solid green;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+}
+
+#bgks {
+    position: absolute;
+    border: 1px solid yellow;
+    background: yellow;
+    height: 100%;
+    width: 100%;
+    right: 0%;
+    opacity: 0.8;
+}
+
+#axs {
+    position: absolute;
+    bottom: 85%;
+    right: 25%;
+}
+
+#lii {
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    display:none;
+    font-weight: bold;
+    white-space: pre-line;
+    line-height: 1;
+}
+
+
+
+ol {
+    list-style-type: none;
+}
+
+#ele::after {
+    font-weight: bold;
+    position: absolute;
+    content: " ";
+    width: 0%;
+    height: 1%;
+    top: 22%;
+    left: 41.5%;
+    transition: .3s ease-in-out;
+    background: #ff8080;
+}
+
+#ele:hover::after {
+    height: 1%;
+    width: 30%;
+}
+
+#eledom {
+    position: absolute;
+    border: black 10px solid;
+    height: 100%;
+    width: 100%;
+    right: 1%;
+    bottom: -1%;
+    z-index: -1;
+    display: none;
+}
+
+#costbgk {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+    border: 5px solid green;
+    background-color: yellow;
+}
+
+#costbgk h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+#questionscost{
+    
+    display: none;
+    position: absolute;
+}
+
+#stackinfo {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+    border: 5px solid green;
+    background-color: yellow;
+}
+
+#stackinfo h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+#wordpressinfo {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+    border: 5px solid green;
+    background-color: yellow;
+}
+
+#reasonone {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+    border: 5px solid green;
+    background-color: yellow;
+}
+
+#arrowright {
+    display: none;
+    position: absolute;
+    bottom: 45%;
+    right: 10%;
+}
+
+.arrowrighttwo {
+    display: none;
+    position: absolute;
+    bottom: 45%;
+    right: 10%;
+
+}
+
+#wordpressinfo h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+#wordpressinfo h5 {
+    position: absolute;
+    font-size: 20px;
+    bottom: 50%;
+    margin-left: 50px;
+    margin-right: 50px;    
+}
+
+#wordpressinfo h4 {
+    position: absolute;
+    font-size: 20px;
+    bottom: 20%;
+    margin-left: 50px;
+    margin-right: 50px;    
+}
+
+#reasonone h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+#reasonone h4 {
+    position: absolute;
+    font-size: 20px;
+    bottom: 35%;
+    margin-left: 50px;
+    margin-right: 50px;    
+}
+
+#reasonsecond
+{
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 11%;
+    right: 10%;
+    border: 5px solid green;
+    background-color: yellow;
+}
+
+#reasonsecond h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+#reasonsecond h4 {
+    position: absolute;
+    font-size: 20px;
+    bottom: 25%;
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+
+#reasonsecond h5 {
+    position: absolute;
+    font-size: 20px;
+    bottom: 10%;
+    margin-left: 50px;
+    margin-right: 50px;  
+}
+
+#Timedesc {
+    position: absolute;
+    display: none;
+    border: 5px solid green;
+    background: yellow;
+    height: 78%;
+    width: 79%;
+    bottom: 12%;
+    right: 7.6em;
+    opacity: 0.8;
+}
+
+#Timedesc h1 {
+    padding: 5%;
+    font-size: 34px;
+    text-align: center;
+}
+
+#Timedesc h5 {
+    padding: 5%;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+#Timedescone {
+    position: absolute;
+    display: none;
+    border: 5px solid green;
+    background: yellow;
+    height: 78%;
+    width: 79%;
+    bottom: 12%;
+    right: 7.6em;
+    opacity: 0.8;
+}
+
+#MoreAboutMe {
+    position: absolute;
+    display: none;
+    border: 1px solid yellow;
+    background: yellow;
+    height: 78%;
+    width: 79%;
+    bottom: 12%;
+    right: 7.6em;
+    opacity: 0.8;
+}
+
+.arrow {
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    left: 45%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+@keyframes offer {
+
+    0%, 60%, 80%, 90%, 100%, 
+    
+    
+    0% {
+        transform: translateY(0%) translateX(150%);
+        width: 5px;
+    }
+
+    60% {
+        transform: translateY(1000%) translateX(150%);
+        
+    }
+
+    80% {
+        transform: translateY(1000%) translateX(-1650%);
+    }
+
+    90% {
+        transform: translateY(0%) translateX(-1600%);
+    
+    }
+
+}
+
+@keyframes move {
+    0%,
+    60%,
+    100%,
+    
+    0% {
+        margin-right: 90%;}
+    
+    60% {
+        margin-left: 170%;}
+    100% {
+        margin-right: 90%;
+    }
+
+}

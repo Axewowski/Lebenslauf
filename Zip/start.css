@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bb1: #ff8080;
+    --yellowbg1: #ff8080;
+    --yellowbg2: #ffe6e6;   
+}

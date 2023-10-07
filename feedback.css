@@ -1,0 +1,153 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bb1 : rgb(248, 222, 222);
+    --bb2 : rgb(196, 65, 65);
+    --bg1 : rgb(223, 20, 20);
+    --bg2 : rgb(255, 255, 255);
+}
+
+html {
+    background: linear-gradient(var(--bb1), var(--bb2));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    margin: 30px;
+    padding: 20px;
+}
+
+.me, .portfolio, .gry, .contact {
+    font-size: 20px;
+    background:transparent;
+    height: 70px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+
+.me {
+    position: relative;
+}
+
+.me::after {
+    content: "";
+    position: absolute;
+    top: 75px; 
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.me:hover::after {
+    width: 100%;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.portfolio:hover::after {
+    width: 100%;
+}
+
+.gry {
+    position: relative;
+}
+
+.gry::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.gry:hover::after {
+    width: 100%;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    width: 0%;
+    background-color: green;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.contact:hover::after {
+    width: 100%;
+}
+
+
+
+img {
+    position: absolute;
+    height: 100px;
+    animation-delay: 5s;
+    animation: move 10s ease-in-out infinite;
+}
+
+@keyframes move {
+    0%,
+    60%,
+    100%,
+    
+    0% {
+        margin-right: 90%;}
+    
+    60% {
+        margin-left: 170%;}
+    100% {
+        margin-right: 90%;
+    }
+
+}
+
+
+.infos {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.infos li {
+    padding: 10px;
+}

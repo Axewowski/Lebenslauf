@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="main.css">
+<title>Axevowski Main Page</title>
+
+<body>
+<container id="border">
+    <div id="me">
+        <button id ='button1'>O mnie</button>
+        <h1 id="textme1">Text</h1>
+        <h2 id="textme2">Text2</h2>
+        <h3 id="textme3">Text3</h3>
+        <img src="">
+    </div>
+    <div id="portfolio">
+        <button id ='button2'>Portfolio</button>
+    </div>
+    <div id="gry">
+        <button id ='button3'>GRY</button>
+    </div>
+    <div id="contact">
+        <button id ='button4'>Kontakt</button>
+    </div>
+</container>
+
+<script>
+    const button = document.getElementById('button1');
+    button.addEventListener('click', (event) => {
+        console.log("text");
+    });
+    
+    var text = document.querySelector('#textme1')
+    var text2 = document.querySelector('#textme2')
+    var text3 = document.querySelector('#textme3')
+    text.innerHTML = "Cześć, zobacz kim jestem";
+    text2.innerHTML = "Myślę, że przed podjęciem współpracy zawsze <br> miło i dobrze dowiedzieć się, z kim przyjdzie <br> Ci współpracować."
+    text3.innerHTML = "Zapraszam Cię do sprzawdzenia szybkiej nawigacji najbardziej <br> interesujących rzeczy w innych zakładach w górnej części ekranu. <br> a jeśli moja osoba zaintersuje Cię bardziej, to możesz przejść do pełnej <br> strony o mnie."
+</script>
+
+</body>
+
+</html>

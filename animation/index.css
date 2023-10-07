@@ -1,0 +1,30 @@
+
+
+.border {
+    position: absolute;
+    bottom: 20%;
+    border: 5px black solid;
+    width: 50vh;
+    height: 50vh;
+    right: 40%;
+}   
+
+#animationSelect {
+    position: absolute;
+    background-color: cadetblue;
+    border-radius: 20%;
+    right: 50%;
+    height: 6vh;
+    width: 10vh;
+    font-size: 3vh;
+}
+
+.btn-yes {
+    position: absolute;
+    height: 3vh;
+    width: 10vh;
+    bottom: 10%;
+    left: 50%;
+    background: transparent;
+    background-color: blue;
+}

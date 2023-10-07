@@ -1,0 +1,15 @@
+#canvas1 {
+    position: absolute;
+    background: none;
+    border: 10px solid green;
+    height: 500px;
+    width: 1300px;
+    bottom: 1%;
+    left: 6%;
+}
+
+img {
+    z-index: -1;
+}
+
+

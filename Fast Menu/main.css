@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bb1 : rgb(248, 222, 222);
+    --bb2 : rgb(196, 65, 65);
+    --bg1 : rgb(223, 20, 20);
+    --bg2 : rgb(255, 255, 255);
+    --nb1 : rgb(122, 9, 77);
+    --nb2 : rgb(98, 7, 147);
+}
+
+body {
+    background: var(--nb1);
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#border {
+    position: absolute;
+    border: 10px solid;
+    background: linear-gradient(var(--bb1), var(--bb2));
+    border-radius: 30px;
+    width: 130vh;
+    height: 65vh;
+    bottom: 20%;
+    right: 20%;
+}
+
+#portfolio, #QA, #contact, #me {
+    display:inline-block;
+    margin-right: 16%;
+    padding-left: 70px;
+}
+
+#button1 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 0.1em;
+    
+    
+    transition: ease-in-out 1s;
+}
+
+#button1:hover {
+    
+    letter-spacing: 0.10em;
+    font-size: 20px;
+    box-shadow: 0 0 50px rgb(45, 7, 212);
+}
+
+
+
+#button2 {
+    position: absolute;
+    height: 15%;
+    width: 14%;
+    font-size: 14px;
+    left: 29%;
+    background: transparent;
+    letter-spacing: 0.05em;
+    transition: ease-in-out 1s;
+}
+
+
+#button2:hover {
+    
+    letter-spacing: 0.10em;
+    font-size: 20px;
+    box-shadow: 0 0 50px rgb(45, 7, 212);
+}
+
+
+#button3 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 18px;
+    background: transparent;
+    letter-spacing: 0.05em;
+    transition: ease-in-out 1s;    
+}
+
+
+#button3:hover {
+    
+    letter-spacing: 0.10em;
+    font-size: 20px;
+    box-shadow: 0 0 50px rgb(45, 7, 212);
+}
+
+#button4 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 18px;
+    background: transparent;
+    letter-spacing: 0.05em;
+    transition: ease-in-out 1s;    
+
+}
+
+
+#button4:hover {
+    
+    letter-spacing: 0.10em;
+    font-size: 20px;
+    box-shadow: 0 0 50px rgb(45, 7, 212);
+}
+
+img {
+    position: absolute;
+    width: 28vh;
+    border-radius: 50%;
+    bottom: 28%;
+    margin-left: 65%;
+}
+
+
+.paragraph {
+    padding-right: 1%;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+}
+
+#textme1 {
+    position: absolute;
+    bottom: 65%;
+}
+
+#textme2 {
+    position: absolute;
+    bottom: 45%;
+}
+
+#textme3 {
+    padding-right: 1%;
+    position: absolute;
+    bottom: 23%;
+}
+
+#textme4 {
+    position: absolute;
+    display: none;
+    bottom: 70%;
+    right: 53%;
+}
+
+#yt, #ig, #tk, #fb {
+    
+    text-decoration: none;
+    position: absolute;
+    bottom: 40%;
+    display: none;
+}
+
+#yt {
+    bottom: 60%;
+    left: 8%;
+}
+
+#ig {
+    bottom: 50%;
+    left: 8%;    
+}
+
+#fb {
+    bottom: 40%;
+    left: 8%;
+}
+
+#tk {
+    bottom: 30%;
+    left: 8%;
+}
+
+.Paragraphs {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 7%;
+    font-size: 1.1em;
+}
+
+#border2 {
+    text-align: center;
+    display: inline-flex;
+    position: absolute;
+    border: 10px solid transparent; /* Ustawiamy początkowy kolor borderu na przezroczysty */
+    width: 102%;
+    height: 25%;
+    bottom: 95%;
+    border-radius: 50% 50% 0% 0%; /* Modyfikujemy border-radius, aby uzyskać kształt tęczy */
+    box-shadow: 0 0 45px blue;
+    animation: rainbow 5s infinite; /* Dodajemy animację zmieniającą kolory borderu */
+    z-index: -1;
+    left: -1%;
+}
+
+#FM {
+    position: absolute;
+    right: 20%;
+    bottom: 35%;
+    font-size: 34px;
+    text-decoration: none;
+    color: white;
+}
+
+#WWW {
+    position: absolute;
+    left: 20%;
+    bottom: 35%;
+    font-size: 34px;
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes rainbow {
+    0% { border-color: red; }
+    14% { border-color: orange; }
+    28% { border-color: yellow; }
+    42% { border-color: green; }
+    57% { border-color: blue; }
+    71% { border-color: indigo; }
+    85% { border-color: violet; }
+    100% { border-color: red; }
+}

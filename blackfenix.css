@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bck : rgb(118, 27, 27);
+    --bck2 : rgb(2, 38, 58);
+    --ctn : rgb(150, 19, 19);
+    --cm1 : rgb(2,50,80);
+    --cm2 : #fff; 
+    --pod1 : rgb(255, 255, 255);
+    --pod2: rgb(0, 255, 26);
+}
+
+body {
+    width: 100vw; /* Ważne!!, daje to szerokość na cały ekran. Bowiem, 1vw = 1% szerokości ekranu. */ 
+    height: 100vh;
+    display: flex; /* #1 Pozycjonowanie do boku u góry containera*/
+    justify-content: center; /*#2 Pozycjonowanie do środkk containera*/
+    align-items: center; /* #3 Pozycjonowanie do środka containera*/
+    background: var(--bck);
+    background: linear-gradient(to right bottom, var(--bck), var(--bck2));
+    overflow: hidden; /* Ekran się nie poszerzy, a elementy nie wyjadą poza krawędzie */
+
+}
+
+.container {
+   position: relative; 
+    width: 66%;
+    height: 66%;
+    background: var(--ctn);
+    border-radius: 20px;
+    background: linear-gradient(to right bottom, var(--ctn), var(--cm1)); 
+    opacity: 0.85; /* Przezroczystość*/
+    padding: 32px 92px; /*Przybliża text w kontenerze*/
+    /*Blur effect*/
+    
+}
+
+.bg_img {
+    position: absolute;
+    top: 0;
+    right: 60%;
+    width: 10%;
+    height: 25vh;
+    animation : slideDown 5s linear infinite; /*Prędkość i typ animacji*/
+    
+}
+
+.werevolfs {
+    position: absolute;
+    right: 0%;
+    top: 0;
+    animation: rotate 10s linear infinite; /* Linear naprawia prędkość animacji a infinite, że animacja ma trwaćw nieskończoność */
+}
+
+.snake_wand {
+    position: absolute;
+    top: 0%;
+    height: 85.9vh;
+    width: 20vh;
+    left: 77%;
+}
+
+.eagle {
+    position:absolute;
+    top: 15%;
+    height: 20vh;
+    left: 1%;
+}
+
+.eagle2 {
+    position:absolute;
+    top: 40%;
+    height: 20vh;
+    left: 1%;
+}
+
+.eagle3 {
+    position:absolute;
+    top: 67%;
+    height: 20vh;
+    left: 1%;
+}
+
+h1 {
+    position: absolute;
+    right: 7%;
+    padding: 1px 97px;
+    font-size: 40px;
+}
+
+.trappers {
+    top: 48%;
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 80px;
+}
+
+.wv {
+    top: 20%;
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 80px;
+}
+
+
+.robin {
+    top: 72%;
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 80px;
+}
+
+a  {
+    color: #fff;
+   text-decoration: none;
+   
+}
+
+
+a:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    top: 38%;
+    left: 26.5%;
+    background: var(--pod1);
+    background: linear-gradient(90deg, transparent, var(--pod1));
+    transition: width 0.3s;
+}
+
+a:hover:after {
+    width: 8%;
+}
+
+/*Animacja */
+@keyframes slideDown {
+    from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh)}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+}

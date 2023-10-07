@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bb1 : rgb(248, 222, 222);
+    --bb2 : rgb(196, 65, 65);
+    --bg1 : rgb(223, 20, 20);
+    --bg2 : rgb(255, 255, 255);
+    --nb1 : rgb(122, 9, 77);
+    --nb2 : rgb(98, 7, 147);
+}
+
+body {
+    background: var(--nb1);
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+#border {
+    position: absolute;
+    border: 10px solid;
+    background: linear-gradient(var(--bb1), var(--bb2));
+    border-radius: 30px;
+    width: 130vh;
+    height: 65vh;
+    bottom: 20%;
+    right: 20%;
+}
+
+#portfolio, #gry, #contact, #me {
+    display:inline-block;
+    margin-right: 16%;
+    padding-left: 70px;
+}
+
+#button1 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 28px;
+
+}
+
+#button2 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 28px;
+
+}
+
+
+#button3 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 28px;
+
+}
+
+
+#button4 {
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    font-size: 28px;
+
+}
+
+
+img {
+    position: absolute;
+    width: 35vh;
+    border-radius: 50%;
+    bottom: 17%;
+    margin-left: 60%;
+}
+
+h1 {
+    position: absolute;
+    bottom: 60%;
+}
+
+h2 {
+    position: absolute;
+    bottom: 50%;
+}
+
+#textme2 {
+    padding-right: 1%;
+    position: absolute;
+    bottom: 37%;
+}
+
+#textme3 {
+    padding-right: 1%;
+    position: absolute;
+    bottom: 17%;
+}
